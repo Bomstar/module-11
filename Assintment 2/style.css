@@ -55,3 +55,63 @@ header , main {
     color: var(--primary-color);
     cursor: pointer;
 }
+
+/* section 1 */
+
+.section-1 {
+    color: white;
+    background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-size: 100%;
+    border-radius: 16px;
+}
+
+.search-bg-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    border-radius: 16px;
+}
+
+.search-bg-img > h1 {
+    color: #FFF;
+    font-size: 54px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.search-bg-img > p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 26px; /* 162.5% */
+    padding: 0 260px;
+    text-align: center;
+}
+
+.search-bar {
+    display: inline-flex;
+    padding: 16px;
+    gap: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin-top: 60px;
+}
+
+.dropdown {
+    width: 174px;
+    color: var(--pera-color);
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    background: #FFF;
+}
+
+.primary-btn {
+    background: var(--primary-color);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
