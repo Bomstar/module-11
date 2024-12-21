@@ -115,3 +115,40 @@ header , main {
     border-radius: 5px;
     color: white;
 }
+
+/* section 2 */
+
+.popular {
+    display: flex;
+    gap: 106px;
+    margin-top: 60px;
+}
+
+.popular-description , .popular-img-cont {
+    width: 50%;
+}
+
+.popular-description > h2 {
+    color: var(--title-color);
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.popular-description p , .popular-description li {
+    color: var(--pera-color);
+    font-size: 12px;
+    line-height: 26px; /* 162.5% */
+}
+
+.popular-description > button {
+    margin-top: 30px;
+}
+
+ {
+    wi
+}
+
+.popular-img-cont > img{
+    width: 100%;
+}
