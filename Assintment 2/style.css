@@ -4,6 +4,27 @@
     --pera-color: #5A5A5D;
 }
 
+ 
+/* shared style */
+h2 {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+h3 {
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+p , .popular-description li{
+    color: var(--pera-color);
+    font-size: 14px;
+}
+
+
 body {
     max-width: 1280px;
     margin: 0 auto;
@@ -83,8 +104,6 @@ header , main {
 
 .search-bg-img > p {
     color: #fff;
-    font-size: 14px;
-    line-height: 26px; /* 162.5% */
     padding: 0 260px;
     text-align: center;
 }
@@ -119,7 +138,7 @@ header , main {
 
 .popular {
     display: flex;
-    gap: 50px;
+    gap: 106px;
     margin-top: 60px;
 }
 
@@ -128,16 +147,11 @@ header , main {
 }
 
 .popular-description > h2 {
-    color: var(--title-color);
-    font-size: 32px;
-    font-weight: 800;
     margin-top: 0;
 }
 
-.popular-description p , .popular-description li {
-    color: var(--pera-color);
-    font-size: 14px;
-    line-height: 26px; /* 162.5% */
+.popular-description > P , .popular-description li{
+    margin: 25px 0;
 }
 
 .popular-description > button {
@@ -154,17 +168,8 @@ section {
     margin-top: 60px;
 }
 
-.tour-place-description > h2 {
-    color: var(--title-color);
-    text-align: center;
-    font-size: 32px;
-    font-weight: 800;
-}
-
 .tour-place-description > p {
-    color: var(--pera-color);
     text-align: center;
-    font-size: 14px;
     padding:  0 250px;
 }
 
@@ -187,8 +192,6 @@ section {
 
 .imgbox > h3 {
     color: #FFF;
-    font-size: 20px;
-    font-weight: 800;
 }
 
 .img-1 {
@@ -229,17 +232,10 @@ section {
  padding: 0 250px;
 }
 
-.choose-us-descrip > h2 {
-    color: #131318;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 800;
-}
+
 
 .choose-us-descrip > p {
-    color: var(--pera-color);
     text-align: center;
-    font-size: 14px;
 }
 
 .service-cont {
@@ -254,17 +250,6 @@ section {
     width: 44.5%;
     border-radius: 10px;
     padding: 20px;
-}
-
-.services > h3 {
-    color: var(--title-color);
-    font-size: 18px;
-    font-weight: 800;
-}
-
-.services > p {
-    color: var(--pera-color);
-    font-size: 14px;
 }
 
 .hotelpick {
