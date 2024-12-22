@@ -502,3 +502,8 @@ footer , .media-icon {
     margin: 50px 0;
     color: var(--pera-color);
 }
+
+
+path {
+    fill: var(--primary-color);
+}
