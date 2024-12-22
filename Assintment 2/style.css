@@ -373,7 +373,7 @@ section {
     position: relative;
 }
 
-.video-cont > h4 {
+.video-cont > p {
     position: absolute;
     top: 38%;
     left: 32%;
@@ -443,18 +443,19 @@ hr {
     color: var(--pera-color);
 }
 
-.save70 > h5 , .save70 > h3 {
+.save70 > p {
     text-align: center;
     color: #FFF;
     font-size: 18px;
     margin: 0;
 }
 
-.save70 > h5 {
-    font-weight: 300;
+.save70 > p {
+    color: #FFF;
+    font-weight: 500;
 }
 
-.save70 > h3 {
+.save70 p:nth-child(2) {
     font-size: 26px;
     font-weight: 600;
 }
