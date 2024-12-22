@@ -451,12 +451,54 @@ hr {
 }
 
 .save70 > h5 {
-    /* margin-bottom: 5px; */
     font-weight: 300;
 }
 
 .save70 > h3 {
     font-size: 26px;
     font-weight: 600;
-    /* margin-top: 0; */
+}
+
+/* footer style */
+
+footer {
+    margin-top: 60px;
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 60px 0;
+}
+
+footer , .media-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-descriton {
+    width: 65%;
+}
+
+.footer-descriton > p {
+    padding: 0 55px;
+}
+
+
+.bottum-logo {
+    justify-content: center;
+}
+
+.media-icon {
+    gap: 20px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.media-icon > li:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.footer-descriton > hr {
+    margin: 50px 0;
+    color: var(--pera-color);
 }
