@@ -92,7 +92,7 @@ section {
 
 .section-1 {
     background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
-    background-size: 100%;
+    background-size: 100% 100%;
     border-radius: 16px;
     margin-top: 20px;
 }
