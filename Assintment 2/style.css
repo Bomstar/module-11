@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #FF5400;
+    --primary-color: #ad61ff;
     --title-color: #131318;
     --pera-color: #5A5A5D;
 }
@@ -24,7 +24,7 @@ h3 {
     font-weight: 800;
 }
 
-p , .popular-description li{
+p , .popular-description li , .video-description  li{
     color: var(--pera-color);
     font-size: 14px;
     text-align: center;
@@ -143,6 +143,7 @@ section {
     border: none;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
 }
 
 /* section 2 */
@@ -337,4 +338,51 @@ section {
 .booking-price > p {
     text-align: left;
     padding-right: 60px;
+}
+
+/* section 7 */
+
+.section-7 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.video-description {
+    width: 40%;
+}
+
+.video-description > h2 {
+    margin-top: 0;
+}
+
+.video-description > h2 , 
+.video-description > p ,
+.video-description  li {
+    text-align: left;
+}
+
+.video-description > p ,
+.video-description  li {
+    margin-bottom: 35px;
+}
+
+.video-cont{
+    position: relative;
+}
+
+.video-cont > h4 {
+    position: absolute;
+    top: 38%;
+    left: 32%;
+    color: #FFF;
+    text-align: center;
+}
+
+video {
+    width: 510px;
+    height: 350px;
+    background-size: 100% 100%;
+    background-image: url(Images/Group\ 40089.png);
+    border-radius: 16px;
 }
