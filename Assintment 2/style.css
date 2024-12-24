@@ -5,7 +5,7 @@
 }
 
 body {
-    max-width: 1280px;
+    max-width: 1266px;
     margin: 0 auto;
     font-family: mulish;
 }
@@ -35,7 +35,17 @@ main {
 }
 
 header {
-    margin: 30px 100px 0;
+    position: fixed;
+    margin: 0 100px;
+    padding: 20px 0px;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: calc(100vw - 214px);
+    max-width: 1066px;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 100;
 }
 
 /* header style */
@@ -51,11 +61,17 @@ header {
 }
 
 .nav-container{
-    justify-content: space-between;
+    height: 60px;
+    background-color: #fff;
+}
+
+.nav-toggol-icon {
+    display: none;
 }
 
 .nav-logo {
     gap: 10px;
+    z-index: 3;
 }
 
 .nav-logo > h1 {
@@ -63,6 +79,7 @@ header {
     font-family: Mulish;
     font-size: 28px;
     font-weight: 800;
+    margin: 0;
 }
 
 .nav-logo > h1 > span {
@@ -80,6 +97,45 @@ header {
     cursor: pointer;
 }
 
+.nav-list-mobile {
+    display: none;
+    position: fixed;
+    width: 0;
+    height: 101vh;
+    gap: 20px;
+    padding: 0;
+    top: -20px;
+    bottom: 0;
+    right: 0;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    transition: width .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+
+.nav-open {
+    width: 40%;
+    box-shadow: -1px 2px 5px 630px #1313189c;
+}
+
+.nav-list-mobile li {
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+.nav-list-mobile li:nth-child(1) {
+    margin-top: 60px;
+}
+
+.nav-list-mobile li:hover {
+    color: var(--primary-color);
+}
+
+
 /* main style */
 
 
@@ -94,7 +150,7 @@ section {
     background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
     background-size: 100% 100%;
     border-radius: 16px;
-    margin-top: 20px;
+    margin-top: 100.5px;
 }
 
 .search-bg-img {
@@ -510,14 +566,29 @@ path {
     fill: var(--primary-color);
 }
 
+
+
+
+
+
+
+
+
 /* resposive for mobile */
 
-@media screen and (max-width: 578px){
-    header , main {
+@media screen and (max-width: 576px){
+
+    header {
+        margin: 0;
+        padding: 0 20px;
+        width: calc(100vw - 40px);
+    }
+
+    main {
         margin: 20px;
     }
 
-    .nav-container,
+    /* .nav-container, */
     .search-bar,
     .popular ,
     .section-7 ,
@@ -526,8 +597,24 @@ path {
     }
 
     .nav-list {
-        gap: 18px;
+        display: none;
     }
+
+    /* nav-down */
+
+
+    .nav-toggol-icon{
+        display: block;
+        font-size: 30px;
+        font-weight: 600;
+        z-index: 11;
+    }
+
+    .nav-list-mobile{
+        display: block;
+        overflow: hidden;
+    }
+    /* SHEARD STYLE */
 
     h2 {
         font-size: 20px;
@@ -713,5 +800,4 @@ path {
     hr {
         margin: 20px 0;
     }
-
 }
